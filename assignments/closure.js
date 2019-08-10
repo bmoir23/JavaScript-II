@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function steak(){
+  const right = "the right way!";
+  console.log(`Med-rare is ${right}`);
 
+  function primeRib(){
+    const wrong = "the wrong way!";
+    console.log(`Ketchup on Prime Rib and Steak is ${wrong} but seansoning is ${right}`);
+
+      function tasty(){
+        const grilled= "Put both on the Grill"
+        console.log( `${grilled} to make both ${right} and dont put ketchup on your steak for ${wrong}`);
+      }
+      tasty()
+  }
+  primeRib()
+}
+steak()
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
