@@ -102,11 +102,11 @@ const roomates = [{
         id: 3
 }
 ]
-// Problem 1 ammont of rent of each roomate
+// Problem 1  name and ammont of rent of each roomate
 const roomateNameRent = [];
 
 roomates.forEach(roomate =>{
-    return roomateNameRent.push(`Name: ${roomate.name}, Rent ammount: ${roomate.rent}`);
+    return roomateNameRent.push(`Roomate ${roomate.name} owes ${roomate.rent} in rent`);
 })
 
 console.log(roomateNameRent);
