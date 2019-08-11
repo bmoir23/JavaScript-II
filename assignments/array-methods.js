@@ -83,9 +83,42 @@ console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
+const roomates = [{
+        name: "Brian",
+        age: 29,
+        rent: 450,
+        id: 1
+},
+{
+        name: "Matt",
+        age: 39,
+        rent: 470,
+        id: 2
+},
+{
+        name: "Shane",
+        age: 28,
+        rent: 500,
+        id: 3
+}
+]
+// Problem 1 ammont of rent of each roomate
+const roomateNameRent = [];
 
-// Problem 1
+roomates.forEach(roomate =>{
+    return roomateNameRent.push(`Name: ${roomate.name}, Rent ammount: ${roomate.rent}`);
+})
 
-// Problem 2
+console.log(roomateNameRent);
+// Problem 2 avarge age of roomates
 
-// Problem 3
+averageRoomateAge = roomates.reduce((averageAge, roomate) => {
+    return averageAge + roomate.age;
+}, 0);
+averageRoomateAge = Math.floor(averageRoomateAge / roomates.length);
+console.log(averageRoomateAge); //32 is the average age
+
+// Problem 3 return all roomates with Caps
+
+let caps = roomates.map((name) => {return name.name.toUpperCase()});
+console.log(caps); 
