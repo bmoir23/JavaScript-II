@@ -83,7 +83,7 @@ console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
-const roomates = [{
+const roommates = [{
         name: "Brian",
         age: 29,
         rent: 450,
@@ -103,22 +103,22 @@ const roomates = [{
 }
 ]
 // Problem 1  name and ammont of rent of each roomate
-const roomateNameRent = [];
+const roommateNameRent = [];
 
-roomates.forEach(roomate =>{
-    return roomateNameRent.push(`Roomate ${roomate.name} owes ${roomate.rent} in rent`);
+roommates.forEach(roommate =>{
+    return roommateNameRent.push(`Roomate ${roommate.name} owes ${roommate.rent} in rent`);
 })
 
-console.log(roomateNameRent);
+console.log(roommateNameRent);
 // Problem 2 what are the avarge age of roomates
 
-averageRoomateAge = roomates.reduce((averageAge, roomate) => {
-    return averageAge + roomate.age;
+averageRoommateAge = roommates.reduce((averageAge, roommate) => {
+    return averageAge + roommate.age;
 }, 0);
-averageRoomateAge = Math.floor(averageRoomateAge / roomates.length);
-console.log(averageRoomateAge); //32 is the average age
+averageRoommateAge = Math.floor(averageRoommateAge / roommates.length);
+console.log(averageRoommateAge); //32 is the average age
 
 // Problem 3 return all roomates with Caps beacuse we can 
 
-let caps = roomates.map((name) => {return name.name.toUpperCase()});
+let caps = roommates.map((name) => {return name.name.toUpperCase()});
 console.log(caps); 
