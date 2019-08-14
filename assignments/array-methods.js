@@ -106,7 +106,7 @@ const roommates = [{
 const roommateNameRent = [];
 
 roommates.forEach(roommate =>{
-    return roommateNameRent.push(`Roomate ${roommate.name} owes ${roommate.rent} in rent`);
+    return roommateNameRent.push(`Roommate ${roommate.name} owes ${roommate.rent} in rent`);
 })
 
 console.log(roommateNameRent);
