@@ -6,7 +6,7 @@ function steak(){
 
   function primeRib(){
     const wrong = "the wrong way!";
-    console.log(`Ketchup on Prime Rib and Steak is ${wrong} but seansoning is ${right}`);
+    console.log(`Ketchup on Prime Rib and Steak is ${wrong} but seasoning is ${right}`);
 
       function tasty(){
         const grilled= "Put both on the Grill"

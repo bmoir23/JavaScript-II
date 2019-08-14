@@ -110,7 +110,7 @@ roomates.forEach(roomate =>{
 })
 
 console.log(roomateNameRent);
-// Problem 2 avarge age of roomates
+// Problem 2 what are the avarge age of roomates
 
 averageRoomateAge = roomates.reduce((averageAge, roomate) => {
     return averageAge + roomate.age;
@@ -118,7 +118,7 @@ averageRoomateAge = roomates.reduce((averageAge, roomate) => {
 averageRoomateAge = Math.floor(averageRoomateAge / roomates.length);
 console.log(averageRoomateAge); //32 is the average age
 
-// Problem 3 return all roomates with Caps
+// Problem 3 return all roomates with Caps beacuse we can 
 
 let caps = roomates.map((name) => {return name.name.toUpperCase()});
 console.log(caps); 
